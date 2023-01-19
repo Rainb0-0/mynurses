@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}خانه{% endblock title %}
+{% block style %}
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock style %}
+
+{% block content %}
+        <div class="info">
+                <div class="service-grid">
+                        <div class="info-items"><img src="" alt="" class="info-items-pic"></div>
+                        <div class="info-items"><img src="" alt="" class="info-items-pic"></div>
+                        <div class="info-items"><img src="" alt="" class="info-items-pic"></div>
+                        <div class="info-items"><img src="" alt="" class="info-items-pic"></div>
+                        <div class="info-items"><img src="" alt="" class="info-items-pic"></div>
+                        <div class="info-items"><img src="" alt="" class="info-items-pic"></div>
+                        <div class="info-items"><img src="" alt="" class="info-items-pic"></div>
+                        <div class="info-items"><img src="" alt="" class="info-items-pic"></div>
+                        <div class="info-items"><img src="" alt="" class="info-items-pic"></div>
+                </div>
+                <img src="{% static 'asset/info-figure.png' %}" alt="" class="info-figure">
+        </div>
+{% endblock content %}

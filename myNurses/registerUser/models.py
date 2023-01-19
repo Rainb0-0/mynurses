@@ -1,6 +1,5 @@
 from django.db import models
 from regionSelection import models as regionModel
-#from location_field.models.spatial import LocationField
 
 class user(models.Model):
         genderChoices = [
@@ -16,7 +15,7 @@ class user(models.Model):
         homeNumber1 = models.IntegerField(help_text="Users home number", blank=True)
         homeNumber1 = models.IntegerField(help_text="Users home number", blank=True)
         region = models.ManyToManyField(regionModel.region)
-        #location = LocationField()
 
+        date = models.DateTimeField(auto_now_add=True)
         def __str__(self) -> str:
                 return f"{self.name} {self.lastName}"

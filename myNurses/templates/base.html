@@ -1,0 +1,47 @@
+{% load static %}
+<!doctype html>
+<html lang="fa">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="{% static 'logo.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
+    {% block style %}{% endblock style %}
+    <title>خدمات پرستاری در منزل رستگاری|{%block title%} {%endblock title%}</title>
+  </head>
+  <body>
+    <header>
+      <div class="branding">
+        <a href="/" class="logo-link"><img src="{% static 'logo.png' %}" alt="خدمات پرستاری در منزل رستگاری" class="logo"></a>
+        <p class="title">
+          خدمات پرستاری در منزل <span style="color:rgb(78, 131, 230)">رستگاری</span>
+        </p>
+      </div>
+      <div class="user-action">
+        <a href="request/register"><i class="user-icon fa-solid fa-user"></i></a>
+        <a href="request/register"><p class="user-action-text">درخواست عضویت</p></a>
+      </div>
+    </header>
+        <div class="container">
+                {% block content %}{% endblock content %}
+        </div>
+        <footer>
+          <hr>
+          <div class="footer-container">
+            <div class="about-us">
+              <h3 class="about-us-title">درباره ما</h3>
+              <p class="about-us-text">
+                سلام دوستان امروز می خوام خودمونو بیشتر بهتون معرفی کنیم، کار ما خدمات پزشکی پرستاری در منزله که به صورت ۲۴ ساعته آماده خدمت به شما هستیم، اسم موسسه ما رستگاری هستش که از موسس مجموعه استاد علیرضا رستگاری گرفته شده که ایشون و دو پسراشون سینا و سروش رستگاری تاسیس کرد جالبه بدونید اولین خدمات پرستاری در ایران توسط ایشون بنا شده ، پس مجموعه ما بالای ۲۲ سال سابقه خدمات پرستاری در منزل داره
+              </p>
+            </div>
+            <div class="contact">
+              <h3 class="contact-title">برای ارتباط با ما با شماره زیر تماس بگیرید </h3>
+              <p class="contact-phone"> ۰۲۱ ۹۱ ۵۵ ۵۵ ۱۵</p>
+            </div>
+          </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
